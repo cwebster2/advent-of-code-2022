@@ -49,7 +49,6 @@ impl<T> Node<T> {
 impl Node<ElfFile> {
     fn push(&mut self, node: Node<ElfFile>, path: &Vec<String>)
     {
-        // println!("pushing {} to {:?}", node.data.name, path);
         let mut target = self;
         for dir in path {
             // println!("dir: {}", dir);
